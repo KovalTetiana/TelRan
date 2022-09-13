@@ -1,0 +1,132 @@
+body, html {
+
+    height: 100%;
+    margin: 0;
+    padding:0;
+}
+
+      body{
+        margin: 0;
+        display: flex;
+        
+    }
+
+
+
+.wrapper 
+     {
+        background: grey;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+        justify-content: space-between;
+           
+     }
+
+   
+  
+header {
+    background: lightsalmon;
+    width:  40%;
+    height: 100%;
+    aspect-ratio: 1;
+    
+}
+
+main  {
+  
+   width: 59% ;
+   height: 100%;
+   display: flex;
+   box-sizing: border-box;
+   flex-wrap: wrap;
+   gap: 20px;
+ 
+
+}
+
+
+
+.content__header {
+    background: lightgreen;
+    width: 100% ;
+    height: 40% ;
+
+
+}
+
+
+
+.content__article {
+     display: flex;
+     gap: 10px;
+     width: 100% ;
+     height: calc(60% - 20px);
+     /*box-sizing: border-box;*/
+ 
+   
+
+}
+
+.article__section1 {
+    background: lightpink;
+    width: 50% ;
+   
+   
+}
+.article__section2 {
+     display: flex;
+     flex-wrap: wrap;
+     width: 50%;
+     gap:10px;
+     height: 98% ;
+     /*box-sizing: border-box;*/
+     
+ 
+}
+
+.article2__section-blue,
+.article2__footer-blue 
+ {
+    width: 100%;
+    height: 50% ;
+    background: rgb(82, 163, 184);
+}
+
+
+.is-centered { /* чтоб текст был в центре*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 900;
+    color: #ffffff
+}
+
+@media (max-width:760px) {
+    .wrapper {
+        background: none;
+        flex-direction: row;
+    }
+
+    header {
+        width: 100%;
+        height: 30%;
+    }
+
+    main
+     {
+        width: 100%;
+        height: 66%;
+        flex-direction: row;
+    }
+
+    .article__section2 {
+        width: 50%; 
+        height: 96.8%;
+    }
+
+}
